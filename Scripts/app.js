@@ -24,7 +24,6 @@
 
     //#endregion
 
-
     //#region - Information about the greek islands
 
     let paragraph2 = document.getElementById("Folegandros");
@@ -81,6 +80,26 @@
     paragraph10.appendChild(gavdosText);
 
     //#endregion
+
+    //#region - Smooth scrolling to all links
+
+    $("a").on('click', function(event) {
+
+        event.preventDefault();
+
+        let hash = this.hash;
+
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+        window.location.hash = hash;
+        });
+
+    });
+     
+    //#endregion
+
 
 
 })();
