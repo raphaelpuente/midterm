@@ -1,4 +1,8 @@
-/* custom syle sheet */
+/*  CSS Sheet
+    File: Mideterm
+    Name: Raphael Puente
+    Id: 301075627
+    Webpage: https://raphaelpuente.github.io/midterm/index.html */
 
 .navbar {
     opacity: 0.8;
@@ -21,4 +25,7 @@ article, section {
 #contactForm {
     margin-bottom: 4em;
 }
+
+
+
 

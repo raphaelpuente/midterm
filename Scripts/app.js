@@ -4,6 +4,7 @@
     Id: 301075627
     Webpage: https://raphaelpuente.github.io/midterm/index.html */
 
+
 (function () {
 "use strict";
 
@@ -100,10 +101,28 @@
      
     //#endregion
 
-
-
+    //#region - Converting form inputs into variables  
     
 
+    function formInformation() {
+
+        let firstVariable = document.getElementById("firstName").value;
+        let lastVariable = document.getElementById("lastName").value;
+        let numberVariable = document.getElementById("contactNumber").value;
+        let emailVariable = document.getElementById("email").value;
+        let commentVariable = document.getElementById("yourMessage").value;
+    
+        console.log("First name is:     " + firstVariable);
+        console.log("Last name is:      " + lastVariable);
+        console.log("Contact number:    " + numberVariable);
+        console.log("E-mail:            " + emailVariable);
+        console.log("User's comment:    " + commentVariable);
+        
+    }
+
+    document.getElementById("sendButton").addEventListener("click",formInformation);
+
+    //#endregion
 
 
 })();
