@@ -103,7 +103,8 @@
 
     //#region - Converting form inputs into variables  
     
-
+    document.getElementById("sendButton").addEventListener("click",formInformation);
+    
     function formInformation() {
 
         let firstVariable = document.getElementById("firstName").value;
@@ -120,10 +121,11 @@
         
     }
 
-    document.getElementById("sendButton").addEventListener("click",formInformation);
+
 
     //#endregion
 
 
+    
 })();
 
